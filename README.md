@@ -48,9 +48,8 @@ O portfólio é construído utilizando as seguintes tecnologias:
 Este é um projeto web estático e não requer configurações complexas ou dependências de servidor.
 
 1.  **Clone o Repositório:**
-    ```bash
-    git clone [https://github.com/sergiodeplus/nome-do-repositorio.git](https://github.com/sergiodeplus/nome-do-repositorio.git)
-    cd nome-do-repositorio
+
+    https://github.com/zonaeducacional/portfolio.git
     ```
 2.  **Abra o Arquivo:**
     Simplesmente abra o arquivo `clone2.html` em seu navegador de internet preferido.
