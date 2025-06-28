@@ -19,7 +19,7 @@ O portfólio é dividido nas seguintes seções principais, proporcionando uma v
 * **Entre em Contato**: Informações e links para contato, incluindo e-mail, LinkedIn e GitHub.
 
 ## Projetos Destacados
-
+## Projetos por categorias: https://zonaeducacional.github.io/hubeduapps/
 Alguns dos projetos apresentados no portfólio incluem:
 
 * **Geradores de Prompts**: Ferramentas baseadas em IA para auxiliar professores.
