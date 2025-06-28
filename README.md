@@ -43,17 +43,6 @@ O portfólio é construído utilizando as seguintes tecnologias:
 * **JavaScript**: Para interatividade, animações (digitação, fade-in, Intersection Observer para animação de lista) e funcionalidade do menu mobile.
 * **Font Awesome**: Ícones diversos para aprimorar a interface.
 
-## Como Usar / Rodar o Projeto
-
-Este é um projeto web estático e não requer configurações complexas ou dependências de servidor.
-
-1.  **Clone o Repositório:**
-
-    https://github.com/zonaeducacional/portfolio.git
-    ```
-2.  **Abra o Arquivo:**
-    Simplesmente abra o arquivo `clone2.html` em seu navegador de internet preferido.
-
 ## Contato
 
 * **E-mail**: sergioaraujo709@gmail.com
