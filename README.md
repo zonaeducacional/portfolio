@@ -43,6 +43,8 @@ O portfólio é construído utilizando as seguintes tecnologias:
 * **JavaScript**: Para interatividade, animações (digitação, fade-in, Intersection Observer para animação de lista) e funcionalidade do menu mobile.
 * **Font Awesome**: Ícones diversos para aprimorar a interface.
 
+##  Comentários no MECRED: https://mecred.mec.gov.br/recurso/364756
+
 ## Contato
 
 * **E-mail**: sergioaraujo709@gmail.com
