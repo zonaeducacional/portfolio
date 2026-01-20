@@ -18,7 +18,7 @@
         /* 1. Dot Pattern Background (Simulação com CSS) */
         body {
             background-color: #0d1117; /* Cor base escura */
-           
+            background-image: radial-gradient(#2d333b 1px, transparent 1px);
             background-size: 20px 20px; /* Tamanho dos pontos e espaçamento */
         }
 
@@ -64,7 +64,6 @@
                 <li><a href="#education" class="hover:text-teal-400 transition duration-300">Formação</a></li>
                 <li><a href="#experience" class="hover:text-teal-400 transition duration-300">Experiência</a></li>
                 <li><a href="#projects" class="hover:text-teal-400 transition duration-300">Projetos</a></li>
-                <li><a href="#testimonials" class="hover:text-teal-400 transition duration-300">Depoimentos</a></li>
                 <li><a href="#contact" class="hover:text-teal-400 transition duration-300">Contato</a></li>
             </ul>
             <button id="menu-button" class="md:hidden text-gray-100 hover:text-teal-400 focus:outline-none">
@@ -79,24 +78,22 @@
                 <li><a href="#education" class="block w-full text-center py-2 hover:text-teal-400 transition duration-300">Formação</a></li>
                 <li><a href="#experience" class="block w-full text-center py-2 hover:text-teal-400 transition duration-300">Experiência</a></li>
                 <li><a href="#projects" class="block w-full text-center py-2 hover:text-teal-400 transition duration-300">Projetos</a></li>
-                <li><a href="#testimonials" class="block w-full text-center py-2 hover:text-teal-400 transition duration-300">Depoimentos</a></li>
                 <li><a href="#contact" class="block w-full text-center py-2 hover:text-teal-400 transition duration-300">Contato</a></li>
             </ul>
         </div>
     </header>
 
-    <main class="pt-20"> <section id="hero" class="min-h-screen flex items-center justify-center text-center p-4">
+    <main class="pt-20"> 
+        <section id="hero" class="min-h-screen flex items-center justify-center text-center p-4">
             <div class="container mx-auto px-4 animate-fadeIn">
                 <img src="https://web2.nekoweb.org/sergio.png" alt="Sérgio Araújo" class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-teal-400 shadow-lg mb-6">
                 <h1 id="hero-name" class="text-5xl md:text-7xl font-extrabold mb-4 text-gray-50 typing-animation">
-                    </h1>
+                </h1>
                 <p id="hero-description" class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto typing-animation">
-                    </p>
+                </p>
                 <a href="#contact" class="mt-8 inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 shadow-lg">Vamos Conversar!</a>
             </div>
         </section>
-
-        
 
         <section id="about" class="py-20 container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Sobre</h2>
@@ -106,8 +103,6 @@
                 <p class="mb-4">Meu trabalho foca numa pedagogia construtivista-interacionista, crítica e transformadora. Sou servidor efetivo desde 1997, com experiência na coordenação de programas de alfabetização e gestão educacional municipal (2010-2018).</p>
             </div>
         </section>
-
-        
 
         <section id="education" class="py-20 container mx-auto px-4 bg-gray-800 rounded-lg shadow-xl">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Formação</h2>
@@ -208,8 +203,6 @@
             </div>
         </section>
 
-        
-
         <section id="experience" class="py-20 container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Experiência Profissional</h2>
             <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -247,136 +240,24 @@
             </div>
         </section>
 
-        
-
         <section id="projects" class="py-20 container mx-auto px-4 bg-gray-800 rounded-lg shadow-xl">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Portfólio de Projetos</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <a href="https://educ.nekoweb.org/geradores/home.html" target="_blank" class="group bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-blue-500 animated-list-item">
-                    <img src="https://oda.nekoweb.org/imagens+aleatorias/Captura%20de%20tela%20de%202025-06-28%2013-26-35.png" alt="Geradores de Prompts" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-teal-400">Geradores de Prompts</h3>
-                        <p class="text-gray-300 mb-4">Ferramentas baseadas em IA para auxiliar professores na criação de atividades.</p>
-                        <span class="text-blue-400 hover:underline flex items-center">Ver Projeto <i class="fas fa-external-link-alt ml-2 text-sm"></i></span>
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Portfólio de Apps educacionais</h2>
+            <div class="max-w-4xl mx-auto flex flex-col items-center justify-center animated-list-item">
+                
+                <a href="https://escolasergio4-lang.github.io/vitrinedeapps/" target="_blank" class="group block w-full max-w-2xl bg-gray-900 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition duration-500 border-2 border-teal-500 hover:border-teal-400 relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-teal-900/50 to-purple-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="p-10 text-center relative z-10">
+                        <i class="fas fa-layer-group text-6xl text-teal-400 mb-6 group-hover:text-white transition-colors duration-300"></i>
+                        <h3 class="text-3xl font-bold mb-4 text-white">Acessar Vitrine de Apps</h3>
+                        <p class="text-gray-300 text-lg mb-6">Explore minha coleção completa de aplicativos educacionais, ferramentas interativas e recursos pedagógicos digitais em um só lugar.</p>
+                        <span class="inline-block bg-teal-600 group-hover:bg-teal-500 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300">
+                            Ver Portfólio Completo <i class="fas fa-arrow-right ml-2"></i>
+                        </span>
                     </div>
                 </a>
-                <a href="https://web2.nekoweb.org/detetivedotexto/inferir" target="_blank" class="group bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-green-500 animated-list-item">
-                    <img src="https://oda.nekoweb.org/imagens+aleatorias/Captura%20de%20tela%20de%202025-06-28%2013-28-46.png" alt="App sobre Inferência" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-teal-400">App sobre Inferência</h3>
-                        <p class="text-gray-300 mb-4">Aplicação interativa focada no desenvolvimento da habilidade de leitura e inferência textual.</p>
-                        <span class="text-green-400 hover:underline flex items-center">Ver Projeto <i class="fas fa-external-link-alt ml-2 text-sm"></i></span>
-                    </div>
-                </a>
-                <a href="https://v0-aprimorar-rpg.vercel.app/" target="_blank" class="group bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-purple-500 animated-list-item">
-                    <img src="https://oda.nekoweb.org/imagens+aleatorias/Captura%20de%20tela%20de%202025-06-28%2013-30-30.png" alt="RPG Crescente Fértil" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-teal-400">RPG Crescente Fértil</h3>
-                        <p class="text-gray-300 mb-4">Projeto de gamificação educacional para engajar alunos em história e cultura.</p>
-                        <span class="text-purple-400 hover:underline flex items-center">Ver Projeto <i class="fas fa-external-link-alt ml-2 text-sm"></i></span>
-                    </div>
-                </a>
-                <a href="https://web2.nekoweb.org/RPGCIV/escaperoom" target="_blank" class="group bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-orange-500 animated-list-item">
-                    <img src="https://oda.nekoweb.org/imagens+aleatorias/Captura%20de%20tela%20de%202025-06-28%2013-31-43.png" alt="Escape Room" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-teal-400">Escape Room: Fábrica Têxtil Inglesa</h3>
-                        <p class="text-gray-300 mb-4">Jogo educacional de fuga que simula desafios históricos e sociais.</p>
-                        <span class="text-orange-400 hover:underline flex items-center">Ver Projeto <i class="fas fa-external-link-alt ml-2 text-sm"></i></span>
-                    </div>
-                </a>
-                <a href="https://app--quiz-master-5b3ad16a.base44.app/" target="_blank" class="group bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-yellow-500 animated-list-item">
-                    <img src="https://oda.nekoweb.org/imagens+aleatorias/Captura%20de%20tela%20de%202025-06-28%2013-33-00.png" alt="Quiz Maker" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-teal-400">Quiz Maker</h3>
-                        <p class="text-gray-300 mb-4">Micro SaaS educacional para criação de quizzes interativos.</p>
-                        <span class="text-yellow-400 hover:underline flex items-center">Ver Projeto <i class="fas fa-external-link-alt ml-2 text-sm"></i></span>
-                    </div>
-                </a>
-                <a href="https://sisjanu.netlify.app/" target="_blank" class="group bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-teal-500 animated-list-item">
-                    <img src="https://oda.nekoweb.org/imagens+aleatorias/Captura%20de%20tela%20de%202025-06-28%2013-34-15.png" alt="Sistema Escolar" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-teal-400">Sistema Escolar</h3>
-                        <p class="text-gray-300 mb-4">Plataforma de gestão educacional para otimização de processos escolares.</p>
-                        <span class="text-teal-400 hover:underline flex items-center">Ver Projeto <i class="fas fa-external-link-alt ml-2 text-sm"></i></span>
-                    </div>
-                </a>
-                <a href="https://poesianaescoa.netlify.app/" target="_blank" class="group bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-pink-500 animated-list-item">
-                    <img src="https://oda.nekoweb.org/imagens+aleatorias/Captura%20de%20tela%20de%202025-06-28%2013-35-30.png" alt="Poetrix" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-teal-400">Poetrix</h3>
-                        <p class="text-gray-300 mb-4">Plataforma dedicada à poesia, incentivando a criação e o compartilhamento.</p>
-                        <span class="text-pink-400 hover:underline flex items-center">Ver Projeto <i class="fas fa-external-link-alt ml-2 text-sm"></i></span>
-                    </div>
-                </a>
-                <a href="https://web2.nekoweb.org/webwuest/" target="_blank" class="group bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-indigo-500 animated-list-item">
-                    <img src="https://oda.nekoweb.org/imagens+aleatorias/Captura%20de%20tela%20de%202025-06-28%2013-36-49.png" alt="WebQuest" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-teal-400">WebQuest</h3>
-                        <p class="text-gray-300 mb-4">Ferramenta de investigação orientada para o aprendizado baseado em projetos.</p>
-                        <span class="text-indigo-400 hover:underline flex items-center">Ver Projeto <i class="fas fa-external-link-alt ml-2 text-sm"></i></span>
-                    </div>
-                </a>
-                 <a href="https://oda.neocities.org/2023/#" target="_blank" class="group bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-blue-500 animated-list-item">
-                    <img src="https://oda.nekoweb.org/imagens+aleatorias/Captura%20de%20tela%20de%202025-06-28%2013-37-37.png" alt="Projetos Didáticos" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-teal-400">Projetos e Trilhas Digitais de Aprendizagem</h3>
-                        <p class="text-gray-300 mb-4">Coleção de projetos didáticos e trilhas de aprendizagem digitais.</p>
-                        <span class="text-blue-400 hover:underline flex items-center">Ver Projeto <i class="fas fa-external-link-alt ml-2 text-sm"></i></span>
-                    </div>
-                </a>
-               </div>
 
-            <div class="mt-16 text-center animated-list-item">
-                <h3 class="text-3xl font-bold text-gray-50 mb-8">Outros Projetos e Recursos</h3>
-                <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 max-w-5xl mx-auto">
-                    <a href="https://v0-app-improvement-plan-phi.vercel.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">SAEB</a>
-                    <a href="https://app--podcast-escolar-33fb28ea.base44.app/Home" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">PODCAST ESCOLAR</a>
-                    <a href="https://literosferapro.netlify.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">LITEROSFERA</a>
-                    <a href="https://web2.nekoweb.org/antigoegito/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">ANTIGO EGITO</a>
-                    <a href="https://web2.nekoweb.org/appIIguerra/sgm" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">SEGUNDA GUERRA</a>
-                    <a href="https://web2.nekoweb.org/apprenascenca/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">RENASCENÇA</a>
-                    <a href="https://web2.nekoweb.org/comentlitera/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">LPT - COMENTLITERA</a>
-                    <a href="https://web2.nekoweb.org/debate/online" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">DEBATE (Online)</a>
-                    <a href="https://web2.nekoweb.org/detetivedotexto/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">DETETIVE DO TEXTO</a>
-                    <a href="https://web2.nekoweb.org/diariodebordo/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">DIÁRIO DE BORDO</a>
-                    <a href="https://web2.nekoweb.org/gamezigurate/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">ZIGYRATE</a>
-                    <a href="https://web2.nekoweb.org/geo/geo" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">GEO/REGIÕES</a>
-                    <a href="https://rpgcivilizacoes.netlify.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">RPG JORNADA CRESCENTE FÉRTIL</a>
-                    <a href="https://v0-rpg-game-remake.vercel.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">GAME FARAÓ</a>
-                    <a href="https://educ.nekoweb.org/gamequiz.html" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">QUIZ GÊNEROS TEXTUAIS</a>
-                    <a href="https://zonaeducacional.github.io/repositorio9/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">REPOSITÓRIO (GitHub)</a>
-                    <a href="https://preview--reportify-academic.lovable.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">SISTEMA BOLETIM ESCOLAR</a>
-                    <a href="https://2318w7ln74u.netlify.app/coordenacao" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">PORTAL EDU BOLETIM</a>
-                    <a href="https://modern-material-generator.vercel.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">GERADOR RECURSOS DIDÁTICOS</a>
-                    <a href="https://app--escola-gest-852b3de1.base44.app/Disciplinas" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">BOLETIM (Gestão Escolar)</a>
-                    <a href="https://web2.nekoweb.org/literosferapro/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">LITEROSFERA PRO</a>
-                    <a href="https://web2.nekoweb.org/mat/appmatematica" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">MATEMÁTICA</a>
-                    <a href="https://web2.nekoweb.org/quizRI/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">QUIZ R.I.</a>
-                    <a href="https://web2.nekoweb.org/RPGCIV/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">RPG CIVILIZAÇÕES</a>
-                    <a href="https://web2.nekoweb.org/mesop" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">MESOPOTÂMIA (App)</a>
-                    <a href="https://web2.nekoweb.org/palavrasmais" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">1000 PALAVRAS</a>
-                    <a href="https://web2.nekoweb.org/povos" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">POVOS DO CRESC. FÉRTIL</a>
-                    <a href="https://app--argu-mentor-76cd4d7e.base44.app/Dashboard" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">APP ARGUMENTOR</a>
-                    <a href="https://app--kemet-explorer-24baf1d7.base44.app/Home" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">ANTIGO EGITO + (Kemet Explorer)</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScK84OJo1Qi05c6IxmvnTjN9JZqBDt7dJOIKXqfjxiy7CSk-g/viewform" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">TRILHA ANTIGA MESOPOTÂMIA</a>
-                    <a href="https://v0-melhorar-app-escola.vercel.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">CRIATIVAMENTE</a>
-                    <a href="https://creative-text-flow.lovable.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">CRIATIVAMENTE 2</a>
-                    <a href="https://zonaeducacional.github.io/poesia/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">POESIA (GitHub)</a>
-                    <a href="https://educast-kappa.vercel.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">EDUCAST PODCAST CREATOR</a>
-                    <a href="https://dev5.neocities.org/6/page" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">MESOPOTAMIA PAGED</a>
-                    <a href="https://same-vu0jgchhah0-latest.netlify.app" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">FORCA MESOPOTAMIA</a>
-                    <a href="https://mellow-chebakia-116d66.netlify.app" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">RPG RI</a>
-                    <a href="https://v0-aprimorar-codigo.vercel.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">TEXTOSFERA</a>
-                    <a href="https://v0-melhorar-codigo-inky.vercel.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">CRIADOR DE E-BOOK</a>
-                    
-                    <a href="https://v0-ebook-app-eta.vercel.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">E-BOOK</a>
-                    <a href="https://v0-modern-podcast-app.vercel.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">PODCASTEDU</a>
-                    <a href="https://v0-mesopotamia-rpg.vercel.app/" target="_blank" class="text-teal-400 hover:text-teal-300 hover:underline transition duration-300 whitespace-nowrap">AVENTURAS NA MESOPOTAMIA</a>
-                </div>
             </div>
-            </section>
-
-        
+        </section>
 
         <section id="content-production" class="py-20 container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Produção de Conteúdo</h2>
@@ -400,33 +281,23 @@
             </div>
         </section>
 
-        <section id="testimonials" class="py-20 container mx-auto px-4 bg-gray-800 rounded-lg shadow-xl">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Depoimentos</h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                <div class="bg-gray-900 p-8 rounded-lg shadow-lg border border-purple-500 animated-list-item">
-                    <p class="text-gray-300 text-lg italic mb-4">"Eu estou completamente encantada por esse recurso, otimizei meu tempo em 4h semanais que sera poupada do tempo que gastava para realizar meu planejamento, nos moldes manuais, o mais interessante que gostei e que você resolver tudo ali sem a necessidade de abri tantas janelas e comprometendo a velocidade do meu notebook. Eu gosto sempre de fazer a 1ª leitura do prompt criado direto no not após isso reescrevo no caderno, me preocupa se essa comodidade que somos facilmente habituados não acarretara a longo prazo recesso no processo de escrita?"</p>
-                    <p class="text-teal-400 font-semibold">- Michelle Borges</p>
-                </div>
-                <div class="bg-gray-900 p-8 rounded-lg shadow-lg border border-red-500 animated-list-item">
-                    <p class="text-gray-300 text-lg italic mb-4">"Parabéns pela excelente iniciativa Professor. Tu foi gênio pakas viu!"</p>
-                    <p class="text-teal-400 font-semibold">- JOÃO LIMA</p>
-                </div>
-                <div class="bg-gray-900 p-8 rounded-lg shadow-lg border border-green-500 animated-list-item">
-                    <p class="text-gray-300 text-lg italic mb-4">"Parabéns pela iniciativa, sou Professora de Educação Física Escolar e esse aplicativo me ajudará otimizar projetos que estavam parados."</p>
-                    <p class="text-teal-400 font-semibold">- Alexandra Cipriano</p>
-                </div>
-                <div class="bg-gray-900 p-8 rounded-lg shadow-lg border border-blue-500 animated-list-item">
-                    <p class="text-gray-300 text-lg italic mb-4">"Professor Carlos Sérgio, é imperioso, diante do recurso disponibilizado, externar a devida gratidão. Criastes um Recurso Educacional Digital de relevante importância para o contexto hodierno, necessário para docentes utilizarem no cotidiano da prática pedagógica, visando diferentes propostas. Seu trabalho está sendo divulgado e referenciado no meu contexto profissional. Parabéns!"</p>
-                    <p class="text-teal-400 font-semibold">- FRANCISCO GARRIDO DO NASCIMENTO</p>
-                </div>
-            </div>
-        </section>
-        
-
         <section id="contact" class="py-20 container mx-auto px-4 bg-gray-800 rounded-lg shadow-xl">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Entre em Contato</h2>
             <div class="max-w-xl mx-auto text-center text-lg text-gray-300">
-                <p class="mb-6">Estou sempre aberto a novas oportunidades e colaborações na área de educação e tecnologia. Sinta-se à vontade para me enviar uma mensagem ou conectar-se nas redes sociais!</p>
+                
+                <div class="mb-10 text-left bg-gray-900 p-8 rounded-lg border border-teal-500/30 shadow-inner">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-6 border-b border-gray-700 pb-2">Dados Pessoais</h3>
+                    <div class="space-y-3">
+                        <p><span class="text-gray-500 font-semibold w-24 inline-block">Nome:</span> <span class="text-gray-200">Carlos Sérgio Araújo da Silva</span></p>
+                        <p><span class="text-gray-500 font-semibold w-24 inline-block">CPF:</span> <span class="text-gray-200">157.606.265-15</span></p>
+                        <p><span class="text-gray-500 font-semibold w-24 inline-block">RG:</span> <span class="text-gray-200">1990364-20</span></p>
+                        <p><span class="text-gray-500 font-semibold w-24 inline-block">Endereço:</span> <span class="text-gray-200">Rua Nauro Campos, 33 - Centro</span></p>
+                        <p><span class="text-gray-500 font-semibold w-24 inline-block">Cidade:</span> <span class="text-gray-200">Salinas da Margarida - BA</span></p>
+                        <p><span class="text-gray-500 font-semibold w-24 inline-block">CEP:</span> <span class="text-gray-200">44450-000</span></p>
+                        <p><span class="text-gray-500 font-semibold w-24 inline-block">Celular:</span> <span class="text-gray-200">(71) 99613-7113</span></p>
+                    </div>
+                </div>
+
                 <a href="mailto:sergioaraujo709@gmail.com" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 shadow-lg">
                     Enviar E-mail
                 </a>
