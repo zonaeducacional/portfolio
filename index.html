@@ -15,7 +15,7 @@
             scroll-margin-top: 80px; /* Ajuste conforme a altura do seu cabeçalho */
         }
 
-        /* 1. Dot Pattern Background (Simulação com CSS) */
+        /* 1. Dot Pattern Background */
         body {
             background-color: #0d1117; /* Cor base escura */
             background-image: radial-gradient(#2d333b 1px, transparent 1px);
@@ -33,7 +33,7 @@
             50% { border-color: currentColor; }
         }
 
-        /* Animações de entrada para as listas (Animated List) */
+        /* Animações de entrada para as listas */
         .animated-list-item {
             opacity: 0;
             transform: translateY(20px);
@@ -106,6 +106,47 @@
 
         <section id="education" class="py-20 container mx-auto px-4 bg-gray-800 rounded-lg shadow-xl">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Formação</h2>
+
+            <div class="max-w-4xl mx-auto mb-16 animated-list-item">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                    
+                    <div class="relative bg-gray-900 ring-1 ring-gray-900/5 rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-8">
+                        
+                        <div class="flex-shrink-0">
+                            <div class="w-32 h-32 relative flex items-center justify-center bg-gray-800 rounded-full border-2 border-gray-700 shadow-2xl overflow-hidden group-hover:scale-105 transition-transform duration-300">
+                                <img src="https://pdf.ms.credential.net/badge/image?env=production&credential=44lq4voe" 
+                                     alt="Selo Educador Gemini" 
+                                     class="w-full h-full object-contain p-2">
+                            </div>
+                        </div>
+
+                        <div class="flex-1 text-center md:text-left">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                                <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+                                    Educador Certificado do Gemini
+                                </h3>
+                                <span class="hidden md:inline-block px-3 py-1 text-xs font-semibold text-blue-200 bg-blue-900/30 rounded-full border border-blue-500/30">
+                                    Google for Education
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-300 mb-4 leading-relaxed">
+                                Certificação oficial que valida competências fundamentais sobre conceitos de IA generativa e a aplicação prática do Gemini no contexto educacional, potencializando a criatividade e a produtividade em sala de aula.
+                            </p>
+
+                            <div class="flex flex-col sm:flex-row items-center gap-4 mt-2">
+                                <a href="https://www.credential.net/65bfa66b-a668-4f71-a74e-04fa3d2c1764" target="_blank" class="inline-flex items-center justify-center px-6 py-2 text-sm font-bold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 shadow-lg shadow-blue-500/30">
+                                    <i class="fas fa-check-circle mr-2"></i> Verificar Credencial
+                                </a>
+                                <span class="text-sm text-gray-500">
+                                    Emitido em: Jan/2026 • Válido até: Jan/2029
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
                 <div class="bg-gray-900 p-8 rounded-lg shadow-lg border border-teal-500 animated-list-item">
                     <h3 class="text-3xl font-semibold mb-6 text-teal-400 flex items-center"><i class="fas fa-university mr-3"></i> Formação Acadêmica</h3>
@@ -243,7 +284,7 @@
         <section id="projects" class="py-20 container mx-auto px-4 bg-gray-800 rounded-lg shadow-xl">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Portfólio de Apps educacionais</h2>
             <div class="max-w-4xl mx-auto flex flex-col items-center justify-center animated-list-item">
-                
+                 
                 <a href="https://escolasergio4-lang.github.io/vitrinedeapps/" target="_blank" class="group block w-full max-w-2xl bg-gray-900 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition duration-500 border-2 border-teal-500 hover:border-teal-400 relative">
                     <div class="absolute inset-0 bg-gradient-to-r from-teal-900/50 to-purple-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="p-10 text-center relative z-10">
@@ -284,12 +325,12 @@
         <section id="contact" class="py-20 container mx-auto px-4 bg-gray-800 rounded-lg shadow-xl">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Entre em Contato</h2>
             <div class="max-w-xl mx-auto text-center text-lg text-gray-300">
-                
+                 
                 <div class="mb-10 text-left bg-gray-900 p-8 rounded-lg border border-teal-500/30 shadow-inner">
                     <h3 class="text-2xl font-bold text-teal-400 mb-6 border-b border-gray-700 pb-2">Dados Pessoais</h3>
                     <div class="space-y-3">
                         <p><span class="text-gray-500 font-semibold w-24 inline-block">Nome:</span> <span class="text-gray-200">Carlos Sérgio Araújo da Silva</span></p>
-                       <p><span class="text-gray-500 font-semibold w-24 inline-block">Celular:</span> <span class="text-gray-200">(71) 99613-7113</span></p>
+                        <p><span class="text-gray-500 font-semibold w-24 inline-block">Celular:</span> <span class="text-gray-200">(71) 99613-7113</span></p>
                     </div>
                 </div>
 
